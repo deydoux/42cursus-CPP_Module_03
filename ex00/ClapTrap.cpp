@@ -22,7 +22,7 @@ void ClapTrap::attack(const std::string &target) {
 void ClapTrap::takeDamage(unsigned int amount) {
 	if (_hitPoints <= 0)
 		std::cout << "ClapTrap " << _name << " is already down!" << std::endl;
-	else if (amount >= _hitPoints) {
+	else if (amount > INT_MAX || (int)amount >= _hitPoints) {
 		_hitPoints = 0;
 		std::cout << "ClapTrap " << _name << " takes " << amount << " damage points and is destroyed!" << std::endl;
 	} else {
