@@ -2,6 +2,7 @@ NAME = ex02
 
 SOURCES = \
 ClapTrap.cpp \
+FragTrap.cpp \
 main.cpp \
 ScavTrap.cpp \
 
