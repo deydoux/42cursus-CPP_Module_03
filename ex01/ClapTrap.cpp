@@ -24,35 +24,35 @@ ClapTrap::~ClapTrap() {
 
 void ClapTrap::attack(const std::string &target) {
 	if (_hitPoints <= 0)
-		std::cout << _name << " ClapTrap is too damaged to attack!" << std::endl;
+		std::cout << _name << " ClapTrap is too damaged to attack" << std::endl;
 	else if (_energyPoints <= 0)
-		std::cout << _name << " ClapTrap has no energy points left to attack!" << std::endl;
+		std::cout << _name << " ClapTrap has no energy points left to attack" << std::endl;
 	else {
-		std::cout << _name << " ClapTrap attacks " << target << " causing " << _attackDamage << " points of damage!" << std::endl;
+		std::cout << _name << " ClapTrap attacks " << target << " causing " << _attackDamage << " points of damage" << std::endl;
 		_energyPoints--;
 	}
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
 	if (_hitPoints <= 0)
-		std::cout << _name << " ClapTrap is already down!" << std::endl;
+		std::cout << _name << " ClapTrap is already down" << std::endl;
 	else if (amount > INT_MAX || (int)amount >= _hitPoints) {
 		_hitPoints = 0;
-		std::cout << _name << " ClapTrap takes " << amount << " damage points and is destroyed!" << std::endl;
+		std::cout << _name << " ClapTrap takes " << amount << " damage points and is destroyed" << std::endl;
 	} else {
 		_hitPoints -= amount;
-		std::cout << _name << " ClapTrap takes " << amount << " damage points!" << std::endl;
+		std::cout << _name << " ClapTrap takes " << amount << " damage points" << std::endl;
 	}
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
 	if (_hitPoints <= 0)
-		std::cout << _name << " ClapTrap is too damaged for repairs!" << std::endl;
+		std::cout << _name << " ClapTrap is too damaged for repairs" << std::endl;
 	else if (_energyPoints <= 0)
-		std::cout << _name << " ClapTrap has no energy points left for repairs!" << std::endl;
+		std::cout << _name << " ClapTrap has no energy points left for repairs" << std::endl;
 	else {
 		_energyPoints--;
 		_hitPoints += amount;
-		std::cout << _name << " ClapTrap repaired " << amount << " points!" << std::endl;
+		std::cout << _name << " ClapTrap repaired " << amount << " points" << std::endl;
 	}
 }
