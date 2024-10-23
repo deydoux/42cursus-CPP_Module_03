@@ -3,13 +3,21 @@
 int main() {
 	DiamondTrap diamondSparkles("Diamond-Sparkles");
 
-	// for (size_t i = 0; i <= 34; i++) {
-	// 	fragBomb.attack("Clap-Stew");
-	// 	fragBomb.beRepaired(5);
-	// 	fragBomb.highFivesGuys();
-	// }
+	for (size_t i = 0; i <= 25; i++) {
+		diamondSparkles.highFivesGuys();
+		diamondSparkles.guardGate();
+		diamondSparkles.whoAmI();
+		diamondSparkles.attack("Clap-Stew");
+		diamondSparkles.beRepaired(1);
+	}
 
-	// fragBomb.takeDamage(165);
-	// fragBomb.takeDamage(100);
-	// fragBomb.takeDamage(1);
+	diamondSparkles.takeDamage(100);
+	diamondSparkles.takeDamage(100);
+	diamondSparkles.takeDamage(1);
+
+	diamondSparkles.highFivesGuys();
+	diamondSparkles.guardGate();
+	diamondSparkles.whoAmI();
+	diamondSparkles.attack("Clap-Stew");
+	diamondSparkles.beRepaired(1);
 }
