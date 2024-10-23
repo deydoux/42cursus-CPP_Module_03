@@ -10,11 +10,11 @@ _name(other._name) {
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {
+	std::cerr << _name << " ClapTrap copy assignement operator called" << std::endl;
 	_attackDamage = rhs._attackDamage;
 	_energyPoints = rhs._energyPoints;
 	_hitPoints = rhs._hitPoints;
 	_name = rhs._name;
-	std::cerr << _name << " ClapTrap copy assignement operator called" << std::endl;
 	return (*this);
 }
 
