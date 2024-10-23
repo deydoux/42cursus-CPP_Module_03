@@ -8,7 +8,10 @@ int main() {
 		clapStew.beRepaired(1);
 	}
 
-	clapStew.takeDamage(10);
 	clapStew.takeDamage(5);
+	clapStew.takeDamage(10);
 	clapStew.takeDamage(1);
+
+	clapStew.attack("Scav-Enge");
+	clapStew.beRepaired(1);
 }
