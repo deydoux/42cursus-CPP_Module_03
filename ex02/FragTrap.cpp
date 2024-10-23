@@ -32,8 +32,6 @@ void FragTrap::highFivesGuys() {
 		std::cout << _name << " FragTrap is too damaged to request high fives" << std::endl;
 	else if (_energyPoints <= 0)
 		std::cout << _name << " FragTrap has no energy points left to request high fives" << std::endl;
-	else {
-		_energyPoints--;
+	else
 		std::cout << _name << " FragTrap requests high fives from everyone!" << std::endl;
-	}
 }

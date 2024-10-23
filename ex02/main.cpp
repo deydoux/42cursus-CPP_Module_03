@@ -4,7 +4,7 @@ int main() {
 	FragTrap fragBomb("Frag-Bomb");
 
 	for (size_t i = 0; i <= 34; i++) {
-		fragBomb.attack("Clap-Stew");
+		fragBomb.attack("Diamond-Sparkles");
 		fragBomb.beRepaired(5);
 		fragBomb.highFivesGuys();
 	}
