@@ -3,7 +3,7 @@
 int main() {
 	ClapTrap jack("Jack");
 
-	for (size_t i = 0; i < 6; i++) {
+	for (size_t i = 0; i <= 5; i++) {
 		jack.attack("Joe");
 		jack.beRepaired(1);
 	}
