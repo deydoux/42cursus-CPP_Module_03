@@ -4,6 +4,20 @@ ClapTrap::ClapTrap(std::string name) : _attackDamage(0), _energyPoints(10), _hit
 	std::cerr << _name << " ClapTrap constructor called" << std::endl;
 }
 
+ClapTrap::ClapTrap(ClapTrap const &other) : _attackDamage(other._attackDamage), _energyPoints(other._energyPoints), _hitPoints(other._hitPoints),
+_name(other._name) {
+	std::cerr << _name << " ClapTrap copy constructor called" << std::endl;
+}
+
+ClapTrap &ClapTrap::operator=(ClapTrap const &rhs) {
+	_attackDamage = rhs._attackDamage;
+	_energyPoints = rhs._energyPoints;
+	_hitPoints = rhs._hitPoints;
+	_name = rhs._name;
+	std::cerr << _name << " ClapTrap copy assignement operator called" << std::endl;
+	return (*this);
+}
+
 ClapTrap::~ClapTrap() {
 	std::cerr << _name << " ClapTrap destructor called" << std::endl;
 }
