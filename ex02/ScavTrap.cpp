@@ -1,13 +1,13 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap(name) {
+ScavTrap::ScavTrap(std::string name): ClapTrap(name) {
 	std::cerr << _name << " ScavTrap constructor called" << std::endl;
 	_attackDamage = 20;
 	_energyPoints = 50;
 	_hitPoints = 100;
 }
 
-ScavTrap::ScavTrap(ScavTrap const &other) : ClapTrap(other) {
+ScavTrap::ScavTrap(ScavTrap const &other): ClapTrap(other) {
 	std::cerr << _name << " ScavTrap copy constructor called" << std::endl;
 	_attackDamage = other._attackDamage;
 	_energyPoints = other._energyPoints;
