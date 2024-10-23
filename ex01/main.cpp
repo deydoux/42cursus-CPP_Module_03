@@ -1,15 +1,15 @@
 #include "ScavTrap.hpp"
 
 int main() {
-	ScavTrap joe("Joe");
+	ScavTrap scavEnge("Scav-Enge");
 
 	for (size_t i = 0; i <= 17; i++) {
-		joe.attack("Jack");
-		joe.beRepaired(5);
-		joe.guardGate();
+		scavEnge.attack("Frag-Bomb");
+		scavEnge.beRepaired(5);
+		scavEnge.guardGate();
 	}
 
-	joe.takeDamage(125);
-	joe.takeDamage(100);
-	joe.takeDamage(1);
+	scavEnge.takeDamage(125);
+	scavEnge.takeDamage(100);
+	scavEnge.takeDamage(1);
 }
