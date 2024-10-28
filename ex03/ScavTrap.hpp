@@ -9,6 +9,7 @@ protected:
 	static const int _defaultEnergyPoints = 50;
 	static const int _defaultHitPoints = 100;
 public:
+	ScavTrap();
 	ScavTrap(std::string name);
 	ScavTrap(const ScavTrap &other);
 	ScavTrap &operator=(const ScavTrap &rhs);
