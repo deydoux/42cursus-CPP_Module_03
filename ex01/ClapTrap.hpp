@@ -12,6 +12,7 @@ protected:
 	int _hitPoints;
 	std::string _name;
 public:
+	ClapTrap();
 	ClapTrap(std::string name);
 	ClapTrap(const ClapTrap &other);
 	ClapTrap &operator=(const ClapTrap &rhs);
