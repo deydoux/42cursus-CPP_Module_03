@@ -9,6 +9,7 @@ protected:
 	static const int _defaultEnergyPoints = 100;
 	static const int _defaultHitPoints = 100;
 public:
+	FragTrap();
 	FragTrap(std::string name);
 	FragTrap(const FragTrap &other);
 	FragTrap &operator=(const FragTrap &rhs);
